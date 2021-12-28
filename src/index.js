@@ -22,6 +22,10 @@ io.on('connection', (socket) => {
   console.log(
     `\nA socket has been connected: \nID: ${socket.id} \nOrigin: ${socket.handshake.headers.origin}`,
   );
+
+  io.emit('congrats', {
+    msg: 'Successfully connected!',
+  });
 });
 
 module.exports = { app, io };
