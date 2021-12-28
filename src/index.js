@@ -28,7 +28,7 @@ io.on('connection', (socket) => {
   });
 
   socket.on('ok', (data) => {
-    console.log(`Received: ${data}`);
+    console.log('Received:', data);
   });
 });
 
