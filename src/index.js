@@ -19,7 +19,9 @@ const io = require('socket.io')(server);
 app.use(async (ctx) => (ctx.body = { msg: `Welcome to this API.` }));
 
 io.on('connection', (socket) => {
-  console.log('A socket has been connected.', socket.handshake);
+  console.log(
+    `\nA socket has been connected: \nID: ${socket.id} \nOrigin: ${socket.handshake.headers.origin}`,
+  );
 });
 
 module.exports = { app, io };
