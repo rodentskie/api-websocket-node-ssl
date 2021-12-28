@@ -1,0 +1,35 @@
+{
+  "name": "api-websocket-node-ssl",
+  "version": "1.0.0",
+  "description": "SSL WebSocket",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodentskie/api-websocket-node-ssl.git"
+  },
+  "author": "Rodney Lingganay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodentskie/api-websocket-node-ssl/issues"
+  },
+  "homepage": "https://github.com/rodentskie/api-websocket-node-ssl#readme",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "^10.1.1",
+    "dotenv": "^10.0.0",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  }
+}
