@@ -16,7 +16,7 @@ const server = app.listen(PORT, () =>
 );
 const io = require('socket.io')(server);
 
-app.use(async (ctx) => (ctx.body = { msg: `Welcome to this API.` }));
+app.use(async (ctx) => (ctx.body = { msg: `Welcome to this API zzz.` }));
 
 io.on('connection', (socket) => {
   console.log(
