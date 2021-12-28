@@ -26,6 +26,10 @@ io.on('connection', (socket) => {
   io.emit('congrats', {
     msg: 'Successfully connected!',
   });
+
+  socket.on('ok', (data) => {
+    console.log(`Received: ${data}`);
+  });
 });
 
 module.exports = { app, io };
